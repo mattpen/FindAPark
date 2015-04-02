@@ -16,8 +16,10 @@ public class Park implements Parcelable{
             return (ratingSum / ratingCounter);
 
         else
-            return 0;
+            return                                                                                                                                                                                                                                                                                                                                                      ........
+        0;
     }
+
     public void addRating(int newRating) {
         if ((newRating > 0) && (newRating < 6)){
             ratingCounter++;
