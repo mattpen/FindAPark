@@ -24,6 +24,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.matt.dheeraj.findapark.Home" />
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".SaveParkActivity"
+            android:label="@string/title_activity_save_park" >
+        </activity>
     </application>
 
 </manifest>
