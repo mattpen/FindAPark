@@ -7,5 +7,9 @@
     <string name="title_activity_add_apark">Add a Park</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_save_park">SaveParkActivity</string>
-
+    <string name="title_activity_share_park">ShareParkActivity</string>
+    <string name="title_activity_user_search">UserSearchActivity</string>
+    <string name="title_activity_display_park_collection">Parks Found</string>
+    <string name="title_activity_display_park">DisplayParkActivity</string>
+    <string name="sql_domain">http://mattpenn.ddns.net</string>
 </resources>

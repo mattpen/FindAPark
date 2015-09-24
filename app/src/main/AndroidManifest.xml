@@ -4,14 +4,23 @@
     <meta-data android:name="com.google.android.gms.version"
         android:value="@integer/google_play_services_version" />
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
         <activity
             android:name=".Home"
-            android:label="@string/app_name" >
+            android:label="Find a park!" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,12 +36,24 @@
                 android:value="org.matt.dheeraj.findapark.Home" />
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main" >
+            android:name=".ShareParkActivity"
+            android:label="Tell your friends!"
+            android:parentActivityName=".Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.matt.dheeraj.findapark.Home" />
         </activity>
         <activity
-            android:name=".SaveParkActivity"
-            android:label="@string/title_activity_save_park" >
+            android:name=".UserSearchActivity"
+            android:label="Choose a search method" >
+        </activity>
+        <activity
+            android:name=".DisplayParkCollectionActivity"
+            android:label="@string/title_activity_display_park_collection" >
+        </activity>
+        <activity
+            android:name=".DisplayParkActivity"
+            android:label="Park Details" >
         </activity>
     </application>
 
