@@ -17,7 +17,6 @@ public class Home extends ActionBarActivity {
         setContentView(R.layout.activity_home);
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -43,4 +42,5 @@ public class Home extends ActionBarActivity {
     public void addAPark(View view){
         startActivity(new Intent(this, AddAParkActivity.class));
     }
+    public void findAPark(View view) { startActivity(new Intent(this,UserSearchActivity.class));}
 }
